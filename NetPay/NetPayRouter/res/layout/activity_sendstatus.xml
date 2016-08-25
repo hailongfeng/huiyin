@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <include
+        android:id="@+id/in_title"
+        layout="@layout/component_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/in_title"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_terminal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="已发送支付信息至  "
+                android:textSize="@dimen/big_font" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_terminalname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="XXXX"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/big_font" >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=" 请尽快结算"
+                android:textSize="@dimen/big_font" >
+            </TextView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_sendstatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_terminal"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:textSize="@dimen/big_font" >
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/ll_sendoperate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_sendstatus"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bt_againsend"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:background="@drawable/btn_selector_blue"
+                android:text="再次发送"
+                android:textColor="@color/title_txt_color"
+                android:textSize="@dimen/middle_font" />
+
+            <Button
+                android:id="@+id/bt_canclesend"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="40dp"
+                android:text="取消发送"
+                android:background="@drawable/btn_selector_gray"
+                android:textColor="@color/txt_gray"
+                android:textSize="@dimen/middle_font" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

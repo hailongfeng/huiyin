@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/in_title"
+        layout="@layout/component_title" />
+
+    <LinearLayout
+        android:id="@+id/ll_terminalinfo"
+        android:layout_width="650dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/in_title"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:paddingLeft="40dp" >
+
+        <LinearLayout
+            android:id="@+id/ll_terminalip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_ip"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:text="终端IP：  "
+                android:textColor="@color/txt_gray"
+                android:textSize="@dimen/middle_font" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_inputip"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input1"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/txt_gray" >
+            </EditText>
+
+            <Button
+                android:id="@+id/bt_checkstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/btn_selector_blue"
+                android:padding="10dp"
+                android:text="检测"
+                android:textColor="@color/title_txt_color"
+                android:textSize="@dimen/middle_font" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_terminalname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:text="终端名称："
+                android:textColor="@color/txt_gray"
+                android:textSize="@dimen/middle_font" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_inputname"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input1"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/txt_gray" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_terminalsn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_sn"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical"
+                android:text="SN：      "
+                android:textColor="@color/txt_gray"
+                android:textSize="@dimen/middle_font" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_inputsn"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input1"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@color/txt_gray" >
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/ll_terminalinfo"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_cancle"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_selector_gray"
+            android:padding="10dp"
+            android:text="返回"
+            android:textColor="@color/txt_gray"
+            android:textSize="@dimen/middle_font" />
+
+        <Button
+            android:id="@+id/bt_confirm"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/btn_selector_blue"
+            android:padding="10dp"
+            android:text="确认"
+            android:textColor="@color/title_txt_color"
+            android:textSize="@dimen/middle_font" />
+    </LinearLayout>
+
+</RelativeLayout>

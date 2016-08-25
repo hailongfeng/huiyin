@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tv_terminalname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="终端名称"
+            android:textSize="@dimen/middle_font" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_terminalsn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1.8"
+            android:text="SN"
+            android:textSize="@dimen/middle_font" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_terminalip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="IP地址"
+            android:textSize="@dimen/middle_font" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_createdate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="创建日期"
+            android:textSize="@dimen/middle_font" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_onlinestatus"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="在线状态"
+            android:textSize="@dimen/middle_font" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_selector_blue"
+            android:text="新增"
+            android:textColor="@color/title_txt_color"
+            android:textSize="@dimen/middle_font" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_del"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector_orange"
+            android:text="删除"
+            android:textColor="@color/title_txt_color"
+            android:textSize="@dimen/middle_font" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector_orange"
+            android:text="编辑"
+            android:textColor="@color/title_txt_color"
+            android:textSize="@dimen/middle_font" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_lastpage"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector_blue"
+            android:text="上一页"
+            android:textColor="@color/title_txt_color"
+            android:textSize="@dimen/middle_font" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_nextpage"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector_blue"
+            android:text="下一页"
+            android:textColor="@color/title_txt_color"
+            android:textSize="@dimen/middle_font" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_netping"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_selector_blue"
+            android:text="网络测试"
+            android:textColor="@color/title_txt_color"
+            android:textSize="@dimen/middle_font" >
+        </Button>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_terminalList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/ll_bottom"
+        android:layout_below="@id/ll_title"
+         >
+    </ListView>
+
+</RelativeLayout>

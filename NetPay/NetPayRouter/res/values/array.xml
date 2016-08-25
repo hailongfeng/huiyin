@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="date_range">
+        <item name="today">今天</item>
+        <item name="yesterday">昨天</item>
+        <item name="week">本周</item>
+        <item name="lastweek">上周</item>
+        <item name="month">本月</item>
+        <item name="lastmonth">上月</item>
+        <item name="user_defined">自定义</item>
+    </string-array>
+    <string-array name="pay_status">
+
+        <!-- <item name="cancle">取消</item> -->
+        <item name="wait_pay">待支付</item>
+        <item name="pay_success">支付成功</item>
+        <!-- <item nmae="pay_fail">支付失败</item> -->
+    </string-array>
+
+</resources>

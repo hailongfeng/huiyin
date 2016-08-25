@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/keyboard_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="1dp" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+             >
+
+            <Button
+                android:id="@+id/key_7"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:layout_height="129dp"
+                android:background="@drawable/btn_selector_digit_7" />
+
+            <Button
+                android:id="@+id/key_8"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:layout_height="129dp"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/btn_selector_digit_8" />
+
+            <Button
+                android:id="@+id/key_9"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:layout_height="129dp"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/btn_selector_digit_9" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+              android:layout_weight="1"
+            android:layout_marginTop="1dp" >
+
+            <Button
+                android:id="@+id/key_4"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:layout_height="129dp"
+                android:background="@drawable/btn_selector_digit_4" />
+
+            <Button
+                android:id="@+id/key_5"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:layout_height="129dp"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/btn_selector_digit_5" />
+
+            <Button
+                android:id="@+id/key_6"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:layout_height="129dp"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/btn_selector_digit_6" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+              android:layout_weight="1"
+            android:layout_marginTop="1dp" >
+
+            <Button
+                android:id="@+id/key_1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:layout_height="129dp"
+                android:background="@drawable/btn_selector_digit_1" />
+
+            <Button
+                android:id="@+id/key_2"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:layout_height="129dp"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/btn_selector_digit_2" />
+
+            <Button
+                android:id="@+id/key_3"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:layout_height="129dp"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/btn_selector_digit_3" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="1dp" >
+
+            <Button
+                android:id="@+id/key_0"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_weight="1"
+                android:layout_height="129dp"
+                android:background="@drawable/btn_selector_digit_0" />
+
+            <Button
+                android:id="@+id/key_del"
+                style="?android:attr/buttonBarButtonStyle"
+        		android:layout_weight="2"
+               	android:layout_height="129dp"
+                android:layout_marginLeft="1dp"
+                android:layout_span="2"
+                android:background="@drawable/btn_selector_digit_del_2" />
+        </TableRow>
+
+</TableLayout>

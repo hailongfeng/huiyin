@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" 
+    >
+
+    <include
+        android:id="@+id/in_title"
+        layout="@layout/component_home_title" />
+    <com.wizarpos.netpayrouter.View.ScrollViewPager
+        android:layout_below="@id/in_title"
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"  />
+</RelativeLayout>

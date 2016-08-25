@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="grays">#818181</color>
+    <color name="blue">#00AEEF</color>
+    <color name="keyboard_background_color">#C0C0C0</color>
+    <color name="gray">#F3F3F3</color>
+    <color name="gray_white">#E3E2DE</color>
+    <color name="red">#FF0000</color>
+    <color name="title_blue_color">#00AEEF</color>
+    <color name="title_txt_color">#FFFFFF</color>
+    <color name="orange">#FF8800</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="btn_gray_background">#C5C5C5</color>
+    <color name="txt_gray">#8D8C8C</color>
+</resources>
