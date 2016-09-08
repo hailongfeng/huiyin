@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    xmlns:kb="http://schemas.android.com/apk/res-auto"
+    tools:context="com.wizarpos.keybord.MainActivity">
+
+    <com.wizarpos.keybord.view.KeyboardView
+        android:id="@+id/kb"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        kb:num_or_money="money"
+        kb:divideColor="@color/keyboard_background_color"
+        kb:with_dot="false" >
+    </com.wizarpos.keybord.view.KeyboardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edt_test"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+
+            />
+        <EditText
+            android:id="@+id/edt_test2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:layout_width="200dp"
+            android:background="@drawable/key_del_selector"
+            android:layout_height="200dp" />
+    </LinearLayout>
+
+</LinearLayout>
