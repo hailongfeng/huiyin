@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2013 Chris Banes
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/DialogActionBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/form_item_height">
+
+        <uk.co.senab.photup.views.RobotoLightTextView
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/spacing"
+            android:text="@string/place"
+            android:textSize="@dimen/dialog_title_text_size" />
+
+        <ProgressBar
+            android:id="@+id/pb_loading"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_marginRight="@dimen/double_spacing" />
+    </LinearLayout>
+
+    <include layout="@layout/layout_horizontal_line" />
+
+    <RadioGroup
+        android:id="@+id/rg_place_source"
+        style="@style/TabRadioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/rb_place_current"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/rb_place_current"
+            style="@style/TabRadioButton"
+            android:text="@string/location_current" />
+
+        <RadioButton
+            android:id="@+id/rb_place_photo"
+            style="@style/TabRadioButton"
+            android:text="@string/location_photo"
+            android:visibility="gone" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/et_places_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing"
+        android:hint="@string/places_search_hint"
+        android:imeOptions="actionSearch"
+        android:inputType="textNoSuggestions" />
+
+    <ListView
+        android:id="@+id/lv_places"
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1" />
+
+</LinearLayout>

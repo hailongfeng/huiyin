@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2013 Chris Banes
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <string name="google_play_description">With photup you can share your photos to your Facebook
+        profile, quicker than ever before. Think of it as \'Facebook Camera\' for iOS, but on
+        Android.
+
+        - Upload as many photos as you want, all at once in a batch
+        - Add Effects (Filters)
+        - Manually Rotate photos
+        - Crop Photos
+        - Set the caption of each photo
+        - Easily Tag your Friends with Face Detection
+        - Instant Upload. Automatically upload as soon you take a photo
+        - Tag the location and place
+        - Upload to your Groups or Events
+        - Upload to your Page and it\'s albums
+
+
+        Coming soon:
+        - More Privacy Options
+
+        Translations
+        If you want to help translate photup. Go to:
+        http://www.getlocalization.com/photup/
+    </string>
+    <string name="google_play_promo_text">Share your photos with photup for Facebook</string>
+</resources>

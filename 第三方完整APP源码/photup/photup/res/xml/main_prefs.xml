@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2013 Chris Banes
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/pref_general_screen">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_save_files_gallery"
+            android:summary="@string/pref_save_files_gallery_summary"
+            android:title="@string/pref_save_files_gallery_title" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_instant_upload_title">
+        <CheckBoxPreference
+            android:key="pref_instant_upload_enabled"
+            android:title="@string/pref_instant_upload_title" />
+
+        <ListPreference
+            android:dependency="pref_instant_upload_enabled"
+            android:enabled="false"
+            android:key="pref_instant_upload_album"
+            android:summary="@string/pref_instant_upload_album_summary"
+            android:title="@string/pref_instant_upload_album_title" />
+        <ListPreference
+            android:defaultValue="1"
+            android:dependency="pref_instant_upload_enabled"
+            android:entries="@array/quality_settings"
+            android:entryValues="@array/quality_settings_values"
+            android:key="pref_instant_upload_quality"
+            android:title="@string/pref_instant_upload_quality_title" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:dependency="pref_instant_upload_enabled"
+            android:key="pref_instant_upload_wifi_only"
+            android:summary="@string/pref_instant_upload_wifi_only_summary"
+            android:title="@string/pref_instant_upload_wifi_only_title" />
+
+        <PreferenceScreen
+            android:dependency="pref_instant_upload_enabled"
+            android:title="@string/pref_more_options">
+            <ListPreference
+                android:defaultValue="0"
+                android:dependency="pref_instant_upload_enabled"
+                android:key="pref_instant_upload_filter"
+                android:summary="@string/pref_instant_upload_filter_summary"
+                android:title="@string/pref_instant_upload_filter_title" />
+
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="pref_instant_upload_roaming_enabled"
+                android:summary="@string/pref_instant_upload_roaming_summary"
+                android:title="@string/pref_instant_upload_roaming_title" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>
