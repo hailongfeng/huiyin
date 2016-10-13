@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CEE2AE45-3C6F-486B-B48B-8154854EA4D8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TeamTalk</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>36474B52-9BFD-4A18-B124-4EEB7180A4C0</key>
+		<string>https://github.com/mogutt/TTiOSClient.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TeamTalk/TeamTalk.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>36474B52-9BFD-4A18-B124-4EEB7180A4C0</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mogutt/TTiOSClient.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>36474B52-9BFD-4A18-B124-4EEB7180A4C0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>36474B52-9BFD-4A18-B124-4EEB7180A4C0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ttopen</string>
+		</dict>
+	</array>
+</dict>
+</plist>
