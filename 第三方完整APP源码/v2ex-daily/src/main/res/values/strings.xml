@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">V2EX Daily</string>
+    <string name="title_section1">Newest</string>
+    <string name="title_section2">All Node</string>
+    <string name="title_section3">Collections</string>
+    <string name="title_section4">Notifications</string>
+    <string name="title_section5">Settings</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="just_now">Just now</string>
+    <string name="action_search">Search</string>
+    <string name="title_login">User Login</string>
+    <string name="title_comment">Comment</string>
+    <string name="title_comment_hint">Type your comment here</string>
+    <string name="title_cancel">Cancel</string>
+    <string name="comment_content_empty">Comment content can\'t be empty.</string>
+    <string name="title_commenting">Commenting...</string>
+    <string name="fail_get_once">Fail to get once code</string>
+    <string name="title_add_collection">Add to collection</string>
+    <string name="title_user">User</string>
+    <string name="title_sync">Sync User Data</string>
+    <string name="title_more">More</string>
+    <string name="title_about">About V2EX Daily</string>
+    <string name="title_contact">Contact me</string>
+    <string name="title_contact_summary">I am looking for a job...</string>
+    <string name="title_update">Check update</string>
+    <string name="title_notification">Notification Service</string>
+    <string name="title_notification_action">Notification</string>
+
+    <string name="umeng_tag">apk</string>
+
+
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/title_user"
+        android:key="user"
+        >
+
+        <Preference
+            android:key="pref_login"
+            android:title="@string/title_login"
+            />
+
+        <Preference
+            android:key="pref_sync"
+            android:title="@string/title_sync"
+            android:enabled="false"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/title_more"
+        >
+
+        <Preference
+            android:title="@string/title_about"
+            android:summary="V2EX Daily 是一个V2EX的第三方客户端，调用了V2EX的api接口，集成了主题浏览，节点收藏/浏览，用户浏览等功能"
+            />
+
+        <Preference
+            android:key="pref_contact"
+            android:title="@string/title_contact"
+            android:summary="@string/title_contact_summary"
+            />
+
+        <Preference
+            android:key="pref_check_update"
+            android:title="@string/title_update"
+            />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
