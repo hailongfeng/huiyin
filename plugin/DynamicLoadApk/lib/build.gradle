@@ -1,0 +1,64 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        minSdkVersion 8
+        targetSdkVersion 23
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            jniLibs.srcDirs = ['libs']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+
+        androidTest.setRoot('tests')
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:23.0.0'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+task clearJar(type: Delete) {
+    delete 'build/outputs/dl_lib.jar'
+}
+def makeJar(String target,String classDir){
+    exec{
+        executable "jar"
+        args "cvf",target
+        args "-C", classDir
+        args "","."
+    }
+}
+//
+task buildLib() {
+    def srcDir = "build/intermediates/classes/release"
+    def destFile = "build/outputs/dl_lib.jar"
+    inputs.dir srcDir
+    outputs.file destFile
+    doLast {
+        makeJar(destFile, srcDir)
+    }
+}
+buildLib.dependsOn(clearJar,build)
