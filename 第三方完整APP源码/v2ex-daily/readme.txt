@@ -1,0 +1,1 @@
+v2ex-daily 介绍：v2ex是一个创意工作者交流的社区，里面也有很多的程序员，v2ex-daily是为v2ex开发的android客户端。可以在google play 上下载。 
