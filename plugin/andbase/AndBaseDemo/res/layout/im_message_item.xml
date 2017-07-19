@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@+id/itemImageLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:padding="5dip">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:id="@+id/item_icon"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:background="@drawable/ic_launcher"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_toRightOf="@+id/itemImageLayout"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:paddingTop="5dip"
+        android:textColor="@color/gray_dark"
+        android:textSize="18sp" 
+        android:text="1111111111"/>
+
+    <TextView
+        android:id="@+id/item_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_title"
+        android:layout_toRightOf="@+id/itemImageLayout"
+        android:gravity="left"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:text="11111111111111"
+        android:textColor="@color/gray"
+        android:textSize="15sp" />
+    
+    <TextView
+        android:id="@+id/item_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_title"
+        android:layout_toRightOf="@+id/itemImageLayout"
+        android:layout_alignParentBottom="true"
+        android:gravity="right"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:text="2015-07-10"
+        android:textColor="@color/gray"
+        android:textSize="15sp" />
+
+</RelativeLayout>
