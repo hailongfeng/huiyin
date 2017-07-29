@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<!DOCTYPE mapper SYSTEM "http://www.jeeweb.cn/dtd/dynamic-hibernate-statement-1.0.dtd">  
+<mapper namespace="cn.jeeweb">  
+    <!-- SQL 片段 -->  
+    <sql id="userfield">  
+    <![CDATA[ 
+         id,realname
+    ]]>   
+    </sql>
+    <!-- HQL 片段-->  
+    <hql id="userfield">  
+    <![CDATA[ 
+        id,realname
+    ]]>   
+    </hql>
+    <!-- SQL查询  --> 
+    <sql-query id="sys">
+     <![CDATA[ 
+        select * from sys_user where id in 
+		  (<#list ids as id>
+		      '${id}'<#if !book_has_next>,</#if>
+		  </list>)
+     ]]>
+    </sql-query>
+     <!-- SQL查询  --> 
+    <hql-query id="notirication">
+     <![CDATA[ 
+         FROM OaNotificationEntity m  WHERE m.title like :title
+     ]]>
+    </hql-query>
+</mapper>  
