@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+<title>Bootstrap环境搭建</title>
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<script src="../../js/jquery-1.12.4.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <div style="padding: 100px 100px 10px;">
+    这是一个 <a href="#" class="tooltip-show" data-toggle="tooltip"
+            title="show">Tooltip 方法 show
+    </a>.
+ 
+    这是一个 <a href="#" class="tooltip-hide" data-toggle="tooltip"
+            data-placement="left" title="hide">Tooltip 方法 hide
+    </a>.
+ 
+    这是一个 <a href="#" class="tooltip-destroy" data-toggle="tooltip"
+            data-placement="top" title="destroy">Tooltip 方法 destroy
+    </a>.
+ 
+    这是一个 <a href="#" class="tooltip-toggle" data-toggle="tooltip"
+            data-placement="bottom" title="toggle">Tooltip 方法 toggle
+    </a>.
+    <br><br><br><br><br><br>
+    <p class="tooltip-options" >
+        这是一个 <a href="#" data-toggle="tooltip" title="<h2>'am Header2
+         </h2>">Tooltip 方法 options
+        </a>.
+    </p>
+ 
+    <script>
+$(function () { $('.tooltip-show').tooltip('show');});
+        $(function () { $('.tooltip-hide').tooltip('hide');});
+        $(function () { $('.tooltip-destroy').tooltip('destroy');});
+        $(function () { $('.tooltip-toggle').tooltip('toggle');});
+        $(function () { $(".tooltip-options a").tooltip({html : true });
+        });
+</script>
+<div>
+</div>
+</body>
+</html>

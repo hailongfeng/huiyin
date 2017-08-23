@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+<title>Bootstrap环境搭建</title>
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<script src="../../js/jquery-1.12.4.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <h2>点击每个按钮查看方法效果</h2>
+<h4>演示 .button('toggle') 方法</h4>
+<div id="myButtons1" class="bs-example">
+    <button type="button" class="btn btn-primary">原始</button>
+</div>
+ 
+<h4>演示 .button('loading') 方法</h4>
+<div id="myButtons2" class="bs-example">
+    <button type="button" class="btn btn-primary" 
+        data-loading-text="Loading...">原始
+    </button>
+</div>
+ 
+<h4>演示 .button('reset') 方法</h4>
+<div id="myButtons3" class="bs-example">
+    <button type="button" class="btn btn-primary" 
+        data-loading-text="Loading...">原始
+    </button>
+</div>
+ 
+<h4>演示 .button(string) 方法</h4>
+<button type="button" class="btn btn-primary" id="myButton4" 
+    data-complete-text="Loading finished">请点击我
+</button>
+<script>
+$(function () {
+        $("#myButtons1 .btn").click(function(){
+            $(this).button('toggle');
+        });
+    });
+    $(function() { 
+        $("#myButtons2 .btn").click(function(){
+            $(this).button('loading').delay(1000).queue(function() {
+            });        
+        });
+    });   
+    $(function() { 
+        $("#myButtons3 .btn").click(function(){
+            $(this).button('loading').delay(1000).queue(function() {
+                $(this).button('reset');
+            });        
+        });
+    });  
+   $(function() { 
+        $("#myButton4").click(function(){
+            $(this).button('loading').delay(1000).queue(function() {
+                $(this).button('complete');
+            });        
+        });
+    });
+</script>
+</div>
+</body>
+</html>
